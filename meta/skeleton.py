@@ -52,43 +52,14 @@ class Env:
         else:
             raise ValueError(f"Unknown action: {action}")
 
-        # Step 3 - 
-        # 
+        # Step 3 - Calculate the reward based on the actions
 
+        reward = self._rewards(action, baseline_performance)
 
+        # Step 4 - Get the next state
+        next_state = self._next_observation()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        return next_state, reward, {}
 
 
 

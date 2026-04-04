@@ -66,9 +66,6 @@ class Env:
     def state(self):
         pass
     
-    def observe(self):
-        pass
-    
     def _action(self):
         pass
     
@@ -82,7 +79,10 @@ class Env:
         pass
     
     def _add_pass(self):
-        pass
+        """
+        The responsibility of this function is to use the suggested pass to calculate the execution time for a program using the Regression head of the transformer.
+        """
+        
     
     def _compile_and_measure(self):
         pass
